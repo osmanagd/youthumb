@@ -7,11 +7,11 @@ function MyApp({ Component, pageProps }) {
     <Fragment>
       <DefaultSeo
         title="Youtube Thumbnail Downloader"
-        description="Download high-quality thumbnails from YouTube videos."
+        description="Youtube Thumbnail Downloader."
         canonical="https://youtubethumbgrabber.com"
         openGraph={{
           url: "https://youtubethumbgrabber.com",
-          title: "Youtube Thumbnail Downloader",
+          title: "Download Youtube Thumbnail",
           description: "Download high-quality thumbnails from YouTube videos.",
           site_name: "Youtube Thumbnail Grabber",
         }}
