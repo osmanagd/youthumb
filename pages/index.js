@@ -1,23 +1,24 @@
 // pages/index.js
 import { NextSeo } from 'next-seo';
 import defaultSEO from '../seo.config.js';
+import { useState } from "react";
+import copy from "copy-to-clipboard";
 
-function Index() {
+const Index = () => {
+  const [videoURL, setVideoURL] = useState("");
+  const [thumbnailOptions, setThumbnailOptions] = useState([]);
+
+  // ... rest of your Index component code ...
+
   return (
-    <>
-      <NextSeo
-        title={defaultSEO.title}
-        description={defaultSEO.description}
-        openGraph={defaultSEO.openGraph}
-        twitter={defaultSEO.twitter}
-        keywords={defaultSEO.keywords} // Add keywords here
-      />
-      {/* Your page content */}
-    </>
+    <div className="container mx-auto px-4 py-8">
+      {/* ... rest of your JSX ... */}
+    </div>
   );
-}
+};
 
-export default Index;
+export default Index; // Make Index the default export
+
 
 import { useState } from "react";
 import copy from "copy-to-clipboard";
