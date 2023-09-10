@@ -38,51 +38,6 @@ const Index = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* ... rest of your JSX ... */}
-    </div>
-  );
-};
-
-export default Index;
-
-
-import { useState } from "react";
-import copy from "copy-to-clipboard";
-
-const Index = () => {
-  const [videoURL, setVideoURL] = useState("");
-  const [thumbnailOptions, setThumbnailOptions] = useState([]);
-
-  const getYouTubeThumbnail = (url) => {
-    let regExp = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
-    let match = url.match(regExp);
-
-    if (match && match[1].length === 11) {
-      const videoURL = match[1];
-      const thumbnailBaseUrl = "http://img.youtube.com/vi/";
-
-      const options = [
-        { resolution: "HD (1280x720)", code: "maxresdefault" },
-        { resolution: "SD (640x480)", code: "sddefault" },
-        { resolution: "Normal (480x360)", code: "hqdefault" },
-        { resolution: "Medium (320x180)", code: "mqdefault" },
-        { resolution: "Low (120x90)", code: "default" },
-      ];
-
-      const thumbnailOptions = options.map((option) => ({
-        resolution: option.resolution,
-        url: `${thumbnailBaseUrl}${videoURL}/${option.code}.jpg`,
-      }));
-
-      setThumbnailOptions(thumbnailOptions);
-      setVideoURL("");
-    } else {
-      setThumbnailOptions([]);
-    }
-  };
-
-  return (
-    <div className="container mx-auto px-4 py-8">
       <header className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">
           <center>Youtube Thumbnail Downloader</center>
@@ -90,11 +45,10 @@ const Index = () => {
         <p className="text-gray-600" align="center">
           Youtube thumbnail Grabber.
         </p>
-		<p className="text-gray-600" align="center">
+        <p className="text-gray-600" align="center">
           Download Youtube Thumbnail.
         </p>
-		
-		<p className="text-gray-600" align="center">
+        <p className="text-gray-600" align="center">
           You will find the pictures below.
         </p>
       </header>
@@ -112,16 +66,15 @@ const Index = () => {
         >
           Download Thumbnails
         </button>
-		<div className="mt-4 text-gray-600 text-left">
-		<p><strong>You will find the pictures below.</strong></p>
-		<p><strong>YouTube Thumbnail Downloader Supports All YouTube Videos Including 8K, 4K, 1080p, HD, HQ, etc.</strong></p>
-		<p><strong>YouTube Thumbnail Downloader - Download YouTube Thumbnails.</strong></p>
-		<p><strong>This YouTube Thumbnail Grabber is a free online tool, with the help of this YouTube Thumbnail Grabber you can easily Download YouTube Video Thumbnail in different sizes and qualities.
-.</strong></p>
-		<p><strong>What is a YouTube Thumbnail Grabber?</strong></p>
-		<p>YouTube allows channel owners to post all types of engaging videos content and let you watch it. But, when it comes to the thumbnails, you are not able to zoom out or download them. With our YouTube Thumbnail Grabber, you can view full-size thumbnail images in their original quality and save them to your devices. The downloader is free and only requires you to enter a video link for the magic to happen.
-
-</p>
+        <div className="mt-4 text-gray-600 text-left">
+          <p><strong>You will find the pictures below.</strong></p>
+          <p><strong>YouTube Thumbnail Downloader Supports All YouTube Videos Including 8K, 4K, 1080p, HD, HQ, etc.</strong></p>
+          <p><strong>YouTube Thumbnail Downloader - Download YouTube Thumbnails.</strong></p>
+          <p><strong>This YouTube Thumbnail Grabber is a free online tool, with the help of this YouTube Thumbnail Grabber you can easily Download YouTube Video Thumbnail in different sizes and qualities.
+          .</strong></p>
+          <p><strong>What is a YouTube Thumbnail Grabber?</strong></p>
+          <p>YouTube allows channel owners to post all types of engaging videos content and let you watch it. But, when it comes to the thumbnails, you are not able to zoom out or download them. With our YouTube Thumbnail Grabber, you can view full-size thumbnail images in their original quality and save them to your devices. The downloader is free and only requires you to enter a video link for the magic to happen.
+          </p>
           <p><strong>How do I download a YouTube thumbnail?</strong></p>
           <ol>
             <li>Copy the Required YouTube Video URL/Link from the YT Website or App.</li>
