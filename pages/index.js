@@ -49,7 +49,11 @@ const Index = () => {
 		<p className="text-gray-600" align="center">
           You will find the pictures below.
         </p>
+<<<<<<< HEAD
 		 <!-- Description and Keywords (start) -->
+=======
+	   <!-- Description and Keywords (start) -->
+>>>>>>> 63b3d942cb034cf660855f7627c8f4fd7321789e
   
 <p dir="auto" data-pm-slice="1 1 []"><strong>Keywords:</strong></p>
 <p dir="auto">YouTube thumbnail downloader, YouTube thumbnail retrieval, YouTube video thumbnail generator, YouTube video thumbnail grabber, YouTube thumbnail grabber,thumbnail grabber, thumbnail generator, YouTube thumbnail downloader, extract YouTube video thumbnails, store YouTube video thumbnails, download YouTube video thumbnails, capture YouTube video thumbnails, grab YouTube video thumbnails, save YouTube video thumbnails, retrieve YouTube video thumbnails, get YouTube video thumbnails, efficient YouTube thumbnail tool, easy YouTube thumbnail retrieval</p>
