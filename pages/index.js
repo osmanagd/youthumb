@@ -2,7 +2,7 @@
 import { NextSeo } from 'next-seo';
 import defaultSEO from '../seo.config.js';
 
-function HomePage() {
+function Index() {
   return (
     <>
       <NextSeo
@@ -17,7 +17,7 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Index;
 
 import { useState } from "react";
 import copy from "copy-to-clipboard";
