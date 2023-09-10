@@ -1,14 +1,40 @@
 // pages/index.js
 import { NextSeo } from 'next-seo';
 import defaultSEO from '../seo.config.js';
-import { useState } from "react";
+import React, { useState } from "react"; // Import React and useState here
 import copy from "copy-to-clipboard";
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
   const [thumbnailOptions, setThumbnailOptions] = useState([]);
 
-  // ... rest of your Index component code ...
+  const getYouTubeThumbnail = (url) => {
+    let regExp = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
+    let match = url.match(regExp);
+
+    if (match && match[1].length === 11) {
+      const videoURL = match[1];
+      const thumbnailBaseUrl = "http://img.youtube.com/vi/";
+
+      const options = [
+        { resolution: "HD (1280x720)", code: "maxresdefault" },
+        { resolution: "SD (640x480)", code: "sddefault" },
+        { resolution: "Normal (480x360)", code: "hqdefault" },
+        { resolution: "Medium (320x180)", code: "mqdefault" },
+        { resolution: "Low (120x90)", code: "default" },
+      ];
+
+      const thumbnailOptions = options.map((option) => ({
+        resolution: option.resolution,
+        url: `${thumbnailBaseUrl}${videoURL}/${option.code}.jpg`,
+      }));
+
+      setThumbnailOptions(thumbnailOptions);
+      setVideoURL("");
+    } else {
+      setThumbnailOptions([]);
+    }
+  };
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -17,7 +43,7 @@ const Index = () => {
   );
 };
 
-export default Index; // Make Index the default export
+export default Index;
 
 
 import { useState } from "react";
