@@ -49,11 +49,8 @@ const Index = () => {
 		<p className="text-gray-600" align="center">
           You will find the pictures below.
         </p>
-		 <!-- Description and Keywords (start) -->
 
-	   <!-- Description and Keywords (start) -->
-
-	  	 <!-- Description and Keywords (start) -->
+	  	 <-- Description and Keywords (start) -->
   
 <p dir="auto" data-pm-slice="1 1 []"><strong>Keywords:</strong></p>
 <p dir="auto">YouTube thumbnail downloader, YouTube thumbnail retrieval, YouTube video thumbnail generator, YouTube video thumbnail grabber, YouTube thumbnail grabber,thumbnail grabber, thumbnail generator, YouTube thumbnail downloader, extract YouTube video thumbnails, store YouTube video thumbnails, download YouTube video thumbnails, capture YouTube video thumbnails, grab YouTube video thumbnails, save YouTube video thumbnails, retrieve YouTube video thumbnails, get YouTube video thumbnails, efficient YouTube thumbnail tool, easy YouTube thumbnail retrieval</p>
@@ -70,7 +67,7 @@ const Index = () => {
 <p dir="auto"><strong>Related questions:</strong></p>
 <p dir="auto">How do I retrieve the thumbnail image of a YouTube video? Can you explain the process of storing YouTube video thumbnails? Is there a tool to quickly download YouTube video thumbnails? How can I save the thumbnail of a specific YouTube video? What is the best method to grab the thumbnail image of a YouTube video?</p> 
   
- <!-- Description and Keywords (start) -->
+ <-- Description and Keywords (start) -->
       </header>
       <div className="text-center">
         <input
